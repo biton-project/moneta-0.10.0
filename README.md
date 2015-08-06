@@ -123,6 +123,12 @@ error and debugging messages are written there.
 The -debug=... command-line option controls debugging; running with just -debug will turn
 on all categories (and give you a very large debug.log file).
 
+Tricks
+------
+    $ sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
+    $ sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler
+
+
 The Qt code routes qDebug() output to debug.log under category "qt": run with -debug=qt
 to see it.
 
