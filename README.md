@@ -75,9 +75,9 @@ First install
 
     $ dd if=/dev/zero of=/swapfile bs=1k count=2048k
 
-     $ mkswap /swapfile
+    $ mkswap /swapfile
 
-     $ swapon /swapfile
+    $ swapon /swapfile
 
     $ echo "/swapfile       swap    swap    auto      0       0" | sudo tee -a /etc/fstab
 
@@ -87,25 +87,25 @@ First install
 
 **Unix terminal**
 
-$ sudo apt-get install build-essential
+    $ sudo apt-get install build-essential
 
-$ sudo apt-get install libssl-dev
+    $ sudo apt-get install libssl-dev
 
-$ sudo apt-get install libminiupnpc-dev (see USE_UPNP compile flag)
+    $ sudo apt-get install libminiupnpc-dev (see USE_UPNP compile flag)
 
-$ sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler
+    $ sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler
 
-$ sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev libtool
+    $ sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev libtool
 
-$ sudo apt-get install libqrencode-dev
+    $ sudo apt-get install libqrencode-dev
 
-$ git clone https://github.com/moneta-project/moneta
+    $ git clone https://github.com/moneta-project/moneta
 
-$ cd moneta
+    $ cd moneta
 
-$ bash ./autogen.sh
+    $ bash ./autogen.sh
 
-$ bash ./make.sh
+    $ bash ./make.sh
 
 Development tips and tricks
 ---------------------------
