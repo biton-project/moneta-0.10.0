@@ -69,21 +69,21 @@ Translations are converted to Moneta periodically.
 First install
 -------------
 
-### Swap file 2048
+### Swap file 2048k
 
-$ sudo install -o root -g root -m 0600 /dev/null /swapfile
+    $ sudo install -o root -g root -m 0600 /dev/null /swapfile
 
-$ dd if=/dev/zero of=/swapfile bs=1k count=2048k
+    $ dd if=/dev/zero of=/swapfile bs=1k count=2048k
 
-$ mkswap /swapfile
+     $ mkswap /swapfile
 
-$ swapon /swapfile
+     $ swapon /swapfile
 
-$ echo "/swapfile       swap    swap    auto      0       0" | sudo tee -a /etc/fstab
+    $ echo "/swapfile       swap    swap    auto      0       0" | sudo tee -a /etc/fstab
 
-$ sudo sysctl -w vm.swappiness=10
+    $ sudo sysctl -w vm.swappiness=10
 
-$ echo vm.swappiness = 10 | sudo tee -a /etc/sysctl.conf
+    $ echo vm.swappiness = 10 | sudo tee -a /etc/sysctl.conf
 
 **Unix terminal**
 
