@@ -87,6 +87,12 @@ $ echo vm.swappiness = 10 | sudo tee -a /etc/sysctl.conf
 
 **Unix terminal**
 
+$ sudo apt-get install build-essential
+
+$ sudo apt-get install libssl-dev
+
+$ sudo apt-get install libminiupnpc-dev (see USE_UPNP compile flag)
+
 $ sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler
 
 $ sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev libtool
