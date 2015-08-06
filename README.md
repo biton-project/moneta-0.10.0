@@ -91,6 +91,8 @@ $ sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler
 
 $ sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev libtool
 
+$ sudo apt-get install libqrencode-dev
+
 $ git clone https://github.com/moneta-project/moneta
 
 $ cd moneta
