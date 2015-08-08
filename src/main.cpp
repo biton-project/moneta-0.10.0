@@ -1244,7 +1244,33 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex)
 
 CAmount GetBlockValue(int nHeight, const CAmount& nFees)
 {
-    CAmount nSubsidy = 500 * COIN;
+    CAmount nSubsidy = 100 * COIN;
+    if(nHeight == 2)
+    {
+        nSubsidy = 2000000 * COIN;
+    }
+     else if(nHeight < 100)
+    {
+        nSubsidy = 200000 * COIN;
+    }
+    else if(nHeight < 5000)
+    {
+        nSubsidy = 5000 * COIN;
+    }
+    else if(nHeight < 10000)
+    {
+        nSubsidy = 2500 * COIN;
+    }
+    else if(nHeight < 19000)
+    {
+        nSubsidy = 500 * COIN;
+    }
+    else if(nHeight < 20000)
+    {
+        nSubsidy = 1000 * COIN;
+    }
+
+    
     int halvings = nHeight / Params().SubsidyHalvingInterval();
 
     // Force block reward to zero when right shift is undefined.
